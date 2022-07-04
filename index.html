@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Case Converter</title>
+    </head>
+    <body>
+        <textarea cols="30" rows="10"></textarea>
+        <div>
+            <button id="uppercase">uppercase</button>
+            <button id="lowercase">lowercase</button>
+            <button id="sentencecase">sentencecase</button>
+            <button id="propercase">propercase</button>
+        </div>
+
+        <script src="js/case.js"></script>
+        <!-- <script>
+            let uButton = document.getElementById("uppercase");
+            let lButton = document.getElementById("lowercase");
+            let sButton = document.getElementById("sentencecase");
+            let pButton = document.getElementById("propercase");
+
+            uButton.addEventListener("click", upperCase);
+            lButton.addEventListener("click", lowerCase);
+            sButton.addEventListener("click", sentenceCase);
+            pButton.addEventListener("click", properCase);
+
+            function upperCase() {
+                let input = document.querySelector("textarea");
+                input.value = input.value.toUpperCase();
+            }
+
+            function lowerCase() {
+                let input = document.querySelector("textarea");
+                input.value = input.value.toLowerCase();
+            }
+
+            function sentenceCase() {
+                let input = document.querySelector("textarea");
+                let str = input.value;
+
+                let store = str.split(".");
+
+                let holder = [];
+
+                for (let index = 0; index < store.length; index++) {
+                    subStr = store[index].trim();
+                    charSubStr = subStr.slice(0, 1).toUpperCase();
+                    remSubStr = subStr.slice(1);
+                    newSubStr = charSubStr + remSubStr;
+                    holder.push(newSubStr);
+                }
+
+                let newStr = holder.join(". ");
+                input.value = newStr;
+            }
+
+            function properCase() {
+                let input = document.querySelector("textarea");
+                let str = input.value;
+
+                let store = str.split(" ");
+
+                let holder = [];
+
+                for (let index = 0; index < store.length; index++) {
+                    let word = store[index].trim();
+                    let charWord = word.slice(0, 1).toUpperCase();
+                    let remWord = word.slice(1);
+                    let newWord = charWord + remWord;
+                    holder.push(newWord);
+                }
+
+                let newStr = holder.join(" ");
+                input.value = newStr;
+            }
+        </script> -->
+    </body>
+</html>
