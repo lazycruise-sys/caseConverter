@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/index.css" />
         <title>Case Converter</title>
     </head>
     <body>
@@ -12,12 +13,12 @@
             This page will convert your text to either Uppercase, Lowercase,
             Sentence Case or Propercase
         </p>
-        <textarea cols="30" rows="10"></textarea>
-        <div>
-            <button id="uppercase">Upper Case</button>
-            <button id="lowercase">Lower Case</button>
-            <button id="sentencecase">Sentence Case</button>
-            <button id="propercase">Proper Case</button>
+        <textarea cols="40" rows="10"></textarea>
+        <div class="flex-container">
+            <button id="uppercase" class="flex-item">Upper Case</button>
+            <button id="lowercase" class="flex-item">Lower Case</button>
+            <button id="sentencecase" class="flex-item">Sentence Case</button>
+            <button id="propercase" class="flex-item">Proper Case</button>
         </div>
 
         <script src="js/case.js"></script>
